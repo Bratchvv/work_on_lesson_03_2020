@@ -1,6 +1,7 @@
 package com.company.lab14.animal;
 
 import com.sun.xml.internal.ws.api.ha.StickyFeature;
+import java.math.BigDecimal;
 
 public class TestAnimal {
 
@@ -46,6 +47,8 @@ public class TestAnimal {
 
 
     private static void testAnimal(Animal animal) {
+        BigDecimal bd = new BigDecimal(123);
+        bd.add(new BigDecimal(123));
         if(animal instanceof Cat) {
             Cat c = (Cat)animal;
             c.jump();
