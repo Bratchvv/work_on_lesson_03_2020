@@ -1,5 +1,7 @@
 package com.company.lab2;
 
+import com.company.lab17.KeyboardTypes;
+
 public class Test {
 
     public static void main(String[] args) {
