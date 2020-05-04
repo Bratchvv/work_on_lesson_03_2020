@@ -1,7 +1,4 @@
 package com.company.lab15.abstracts;
-
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
-
 public class EltTv extends Tv {
 
     private int zSize;
@@ -19,7 +16,7 @@ public class EltTv extends Tv {
 
     @Override
     public void updateSoft() {
-        throw new NotImplementedException();
+        throw new UnsupportedOperationException();
     }
 
     public int getzSize() {

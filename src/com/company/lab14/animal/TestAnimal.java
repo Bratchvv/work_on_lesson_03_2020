@@ -1,6 +1,5 @@
 package com.company.lab14.animal;
 
-import com.sun.xml.internal.ws.api.ha.StickyFeature;
 import java.math.BigDecimal;
 
 public class TestAnimal {
