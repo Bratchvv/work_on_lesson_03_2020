@@ -1,6 +1,6 @@
 package com.company.lab15.abstracts;
 
-public abstract class AbstractDevice {
+public abstract class AbstractDevice implements Comparable<AbstractDevice>{
 
     private String name;
     private Integer serial;
@@ -39,5 +39,19 @@ public abstract class AbstractDevice {
 
     public void setSerial(Integer serial) {
         this.serial = serial;
+    }
+
+    @Override
+    public String toString() {
+        return "AbstractDevice{" +
+            "name='" + name + '\'' +
+            ", serial=" + serial +
+            '}';
+    }
+
+    @Override
+    public int compareTo(AbstractDevice o) {
+        int v = this.getName().compareTo(o.getName());
+        return v; // it can also return 0, and 1
     }
 }
