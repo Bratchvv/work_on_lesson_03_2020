@@ -43,5 +43,9 @@ public class FuncInterfaceExample {
         System.out.println("Имя user1: " + user1.getName());
         System.out.println("Имя user2: " + user2.getName());
 
+
+        Function<String, User> userFunction = (userName) -> new User(userName);
+        Function<String, User> userFunction2 = User::new;
+
     }
 }
