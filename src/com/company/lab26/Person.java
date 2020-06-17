@@ -20,5 +20,13 @@ class Person implements Serializable {
     int getAge() {
         return age;
     }
+
+    public static void main(String[] args) {
+        Class p = Person.class;
+        Class[] intrfs = p.getInterfaces();
+        for (Class intr : intrfs){
+            System.out.println(intr.getName());
+        }
+    }
 }
 
